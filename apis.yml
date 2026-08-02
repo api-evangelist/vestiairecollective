@@ -1,8 +1,25 @@
 aid: vestiairecollective
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vestiairecollective.png
 name: vestiairecollective
-description: vestiairecollective is a company surfaced as a portfolio company of balderton-capital and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Vestiaire Collective is a global online marketplace for pre-owned luxury and designer
+  fashion, founded in Paris in 2009. The platform lets members buy and sell authenticated second-hand
+  clothing, bags, shoes, watches, and accessories, with in-house physical authentication and quality
+  control on higher-value items and a mission centered on circular fashion and sustainable consumption.
+  It operates a consumer marketplace across web and mobile apps in dozens of countries. It is backed
+  by Balderton Capital among other investors. This API Evangelist profile was added as a VC-portfolio
+  lead; enrichment probes found no public developer/API program, but did verify the company's published
+  security disclosure surface and domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/vestiairecollective/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Fashion
+- Luxury
+- Marketplace
+- Resale
+- E-Commerce
+- Circular Economy
+- Second-Hand
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +46,17 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/vestiairecollective-vulnerability-disclosure.yml
+- type: Security
+  url: https://vestiairecollective.com/.well-known/security.txt
+- type: DomainSecurity
+  url: security/vestiairecollective-domain-security.yml
 - type: Website
   url: https://www.vestiairecollective.com/
+
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
